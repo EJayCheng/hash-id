@@ -10,3 +10,12 @@ cache:
 test:
   script:
     - npm run coverage
+
+publish:
+  script:
+    - npm publish
+  when: manual
+  dependencies:
+    - test
+  only:
+    - master
