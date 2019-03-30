@@ -6,7 +6,8 @@
   "module": "dist/index.js",
   "typings": "dist/index.d.ts",
   "scripts": {
-    "coverage": "jest --coverage"
+    "coverage": "jest --coverage",
+    "prepublish": "rm -r dist && tsc"
   },
   "author": "",
   "license": "ISC",
