@@ -12,10 +12,12 @@ cache:
     - node_modules/
 
 test:
+  stage: test
   script:
     - npm run coverage
 
 publish:
+  stage: publish
   script:
     - npm publish
   dependencies:
