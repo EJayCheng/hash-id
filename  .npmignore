@@ -1,0 +1,6 @@
+/node_modules
+coverage
+*.spec.js
+*.spec.d.ts
+*.spec.js.map
+.DS_Store
