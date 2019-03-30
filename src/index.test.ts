@@ -1,5 +1,4 @@
 import { HashId } from "./";
-import { rejects } from "assert";
 
 describe("HashId base", () => {
   const hashId = new HashId({
