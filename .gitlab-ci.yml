@@ -14,8 +14,8 @@ test:
 publish:
   script:
     - npm publish
-  when: manual
   dependencies:
     - test
   only:
     - master
+  when: manual
