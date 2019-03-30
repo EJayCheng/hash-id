@@ -7,7 +7,7 @@
   "typings": "dist/index.d.ts",
   "scripts": {
     "coverage": "jest --coverage",
-    "prepublishOnly": "rm -r dist && tsc"
+    "prepublishOnly": "rm -rf dist && tsc"
   },
   "author": "",
   "license": "ISC",
