@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "declaration": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "target": "es5",
+    "outDir": "./dist",
+    "typeRoots": ["./node_modules/@types"],
+    "lib": ["es2016", "dom"]
+  },
+  "include": ["src/**/*.ts"]
+}
