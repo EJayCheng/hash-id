@@ -3,6 +3,10 @@ image: node:8
 before_script:
   - npm install
 
+stages:
+  - test
+  - publish
+
 cache:
   paths:
     - node_modules/
