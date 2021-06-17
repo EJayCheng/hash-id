@@ -1,6 +1,6 @@
 {
   "name": "id-hasher",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "HashId is a library that generates short, unique, non-sequential ids from numbers.",
   "main": "dist/index.js",
   "module": "dist/index.js",

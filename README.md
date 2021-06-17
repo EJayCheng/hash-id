@@ -11,7 +11,7 @@ based on [hashids](https://hashids.org/)
 `npm i id-hasher --save`
 
 ```typescript
-import { HashId } from "@ay/hash-id";
+import { HashId } from "id-hasher";
 const hashId = new HashId({
   salt: "a17b3c3e73ad70620e87b7170f6857c7",
   minHashLength: 6,
