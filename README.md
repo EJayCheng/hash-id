@@ -6,9 +6,9 @@ based on [hashids](https://hashids.org/)
 
 ## Getting Started
 
-`npm i hash-id --save`
+[GitHub](https://github.com/EJayCheng/hash-id) / [npm](https://www.npmjs.com/package/id-hasher)
 
-## Example
+`npm i id-hasher --save`
 
 ```typescript
 import { HashId } from "@ay/hash-id";
@@ -23,19 +23,19 @@ console.log(hashId.encode(10353)); // PREFIX_GJWMQ5_SUFFIX
 console.log(hashId.decode("PREFIX_GJWMQ5_SUFFIX")); // 10353
 ```
 
+## Interface
+
 ```typescript
 export interface HashIdConfig {
-  /** hash 時使用的 salt */
+  /** hash salt */
   salt: string;
-  /** hash 後的 id 前綴 */
+  /** prefix of hashify */
   prefix?: string;
-  /** hash 後的 id 後綴 */
+  /** suffix of hashify  */
   suffix?: string;
-  /** hash 後的 id 最小長度 */
+  /** min length of hashify, Default: 6 */
   minHashLength?: number;
-  /** 允許的字符 */
+  /** allow alphabet of hashify, Default: ABCDEFGHJKLMNPQRSTUVWXYZ23456789 */
   alphabet?: string;
 }
-
-// default alphabet: ABCDEFGHJKLMNPQRSTUVWXYZ23456789
 ```

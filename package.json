@@ -1,7 +1,7 @@
 {
   "name": "id-hasher",
-  "version": "1.0.1",
-  "description": "",
+  "version": "1.0.2",
+  "description": "HashId is a library that generates short, unique, non-sequential ids from numbers.",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -9,7 +9,8 @@
     "coverage": "jest --coverage",
     "prepublishOnly": "rm -rf dist && tsc"
   },
-  "author": "",
+  "repository": "https://github.com/EJayCheng/hash-id",
+  "author": "EJay Cheng",
   "license": "MIT",
   "dependencies": {
     "hashids": "^1.2.2",
@@ -22,6 +23,9 @@
     "jest": "^24.9.0",
     "ts-jest": "^24.3.0",
     "typescript": "^4.3.3"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
   },
   "jest": {
     "transform": {
