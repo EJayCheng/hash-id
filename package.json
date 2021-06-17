@@ -1,6 +1,6 @@
 {
-  "name": "@ay/hash-id",
-  "version": "1.0.0",
+  "name": "hash-id",
+  "version": "1.0.1",
   "description": "",
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -10,7 +10,7 @@
     "prepublishOnly": "rm -rf dist && tsc"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "hashids": "^1.2.2",
     "lodash": "^4.17.11"

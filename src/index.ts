@@ -31,7 +31,7 @@ export class HashId {
         minHashLength: 6,
         alphabet: RECOGNIZABLE_ALPHABET,
         prefix: "",
-        suffix: ""
+        suffix: "",
       },
       this._config
     );
@@ -52,10 +52,12 @@ export class HashId {
   }
 
   private _removeFixString(input: string): string {
-    if (this._prefix)
+    if (this._prefix) {
       input = input.replace(new RegExp(`^${this._prefix}`, "i"), "");
-    if (this._suffix)
+    }
+    if (this._suffix) {
       input = input.replace(new RegExp(`${this._suffix}$`, "i"), "");
+    }
     return input;
   }
 
@@ -66,16 +68,21 @@ export class HashId {
       id === Infinity ||
       id < 0 ||
       id % 1 !== 0
-    )
+    ) {
       throw "id must be positive integer";
+    }
     let code = this._hashId.encode(id);
     return this._prefix + code + this._suffix;
   }
 
   public decode(code: string): number {
-    if (typeof code != "string" || code.length == 0) return;
+    if (typeof code != "string" || code.length == 0) {
+      return;
+    }
     let value = this._removeFixString(code.trim());
-    if (value.length < this._config.minHashLength) return;
+    if (value.length < this._config.minHashLength) {
+      return;
+    }
     return this._hashId.decode(value)[0];
   }
 }
